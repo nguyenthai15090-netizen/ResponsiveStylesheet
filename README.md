@@ -1,2 +1,0 @@
-# ResponsiveStylesheet
-This is homework
