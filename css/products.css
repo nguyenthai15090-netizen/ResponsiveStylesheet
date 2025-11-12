@@ -1,0 +1,137 @@
+/* Tái cấu trúc Container */
+.section {
+    padding: 30px 0;
+    background-color: #f7f7f7; /* Nền nhẹ nhàng */
+}
+
+.container {
+    width: 95%; /* Mở rộng hơn */
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Tiêu đề Products */
+.title-products {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 25px;
+    border-bottom: 4px solid #D10024; /* Đường kẻ đỏ dưới tiêu đề */
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+/* Ẩn các class cũ và tập trung vào .product-card */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px; /* Điều chỉnh lại khoảng cách của Bootstrap row */
+    margin-left: -15px;
+}
+
+/* Thẻ Sản phẩm (Product Card) */
+.product {
+    /* Đặt style chung cho thẻ */
+    background: #fff;
+    border: 1px solid #E4E7ED;
+    margin-bottom: 30px;
+    transition: 0.3s all;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.05); /* Bóng nhẹ */
+}
+
+.product:hover {
+    border-color: #D10024; /* Viền đỏ khi hover */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px); /* Hiệu ứng nhấc lên */
+}
+
+/* Hình ảnh Sản phẩm */
+.product-img {
+    position: relative;
+    height: 200px; /* Chiều cao cố định cho ảnh */
+    text-align: center;
+}
+
+.product-img img {
+    max-width: 100%;
+    max-height: 100%;
+    height: auto;
+    width: auto;
+    object-fit: contain; /* Đảm bảo ảnh không bị cắt */
+    padding: 15px;
+}
+
+/* Thông tin Sản phẩm (body) */
+.product-body {
+    padding: 10px 15px 5px;
+    text-align: center;
+}
+
+.product-category {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #8D99AE;
+    margin: 0;
+}
+
+.product-name {
+    margin: 5px 0;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.product-name a {
+    color: #2B2D42;
+    text-decoration: none;
+    transition: 0.2s color;
+}
+
+.product-name a:hover {
+    color: #D10024; /* Tên sản phẩm màu đỏ khi hover */
+}
+
+/* Giá Sản phẩm */
+.product-price {
+    font-size: 18px;
+    font-weight: 700;
+    color: #D10024; /* Màu đỏ nổi bật */
+    margin: 5px 0 10px;
+}
+
+/* Thông số Kỹ thuật */
+.product-specs {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 8px;
+    height: 30px; /* Giữ khoảng trống */
+}
+
+/* Đánh giá (Rating) */
+.product-rating .fa-star {
+    color: #FFC000; /* Màu vàng cho sao đã đánh giá */
+}
+
+.product-rating .fa-star-o {
+    color: #E4E7ED; /* Màu xám cho sao chưa đánh giá */
+}
+
+/* Nút View Details */
+.add-to-cart {
+    background: #E4E7ED;
+    border-top: 1px solid #E4E7ED;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.add-to-cart-btn {
+    display: block;
+    color: #2B2D42;
+    font-weight: 500;
+    transition: 0.2s color;
+    text-decoration: none;
+}
+
+.add-to-cart-btn:hover {
+    color: #D10024; /* Màu đỏ khi hover */
+}
+
